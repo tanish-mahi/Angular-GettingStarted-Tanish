@@ -1,10 +1,11 @@
 import { NgModule } from "@angular/core";
-import { TanishAppComponent } from "./app.component";
+import { AppComponent } from "./app.component";
 import { BrowserModule } from "@angular/platform-browser";
+import { ProductListComponent } from "./products/product-list.component";
 
 @NgModule({
-  declarations: [TanishAppComponent],
+  declarations: [AppComponent, ProductListComponent],
   imports: [BrowserModule],
-  bootstrap: [TanishAppComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

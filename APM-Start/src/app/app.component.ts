@@ -2,15 +2,14 @@ import { Component } from "@angular/core";
 
 //Component Decorator
 @Component({
-  selector: 'pm-tanish-root',
+  selector: 'pm-root',
   template: `
   <div><h1>{{pageTitle}}</h1>
-    <div>My First Component</div>
     <pm-products></pm-products>
   </div>
   `
 })
-export class TanishAppComponent
+export class AppComponent
 {
   pageTitle : string = 'Tanish Product Management';
 }
