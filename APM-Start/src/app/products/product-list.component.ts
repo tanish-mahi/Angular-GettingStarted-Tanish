@@ -8,6 +8,9 @@ import { Component } from "@angular/core";
 export class ProductListComponent
 {
     pageTitle: string='Tanish Product List (Interpolation)';
+    imageWidth: number=50;
+    imageMargin: number=2;
+    showImage: boolean=false;
     products: any[]=
     [
         {
@@ -61,4 +64,8 @@ export class ProductListComponent
           "imageUrl": "https://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
         }
       ];
+      toggleImage(): void
+      {
+        this.showImage=!this.showImage;
+      }
 }
